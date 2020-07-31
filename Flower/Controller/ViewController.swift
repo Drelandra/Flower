@@ -24,13 +24,21 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupNavBar(bgColor: #colorLiteral(red: 0.1592048705, green: 0.7238836884, blue: 0.4517703056, alpha: 1))
         flowerManager.delegate = self
+        setupImagePicker()
+        setupLabel()
+    }
+    
+    func setupLabel() {
+        descriptionLabel.sizeToFit()
+        descriptionLabel.adjustsFontSizeToFitWidth = true
+    }
+    
+    func setupImagePicker() {
         imagePicker.delegate = self
         imagePicker.allowsEditing = true
         imagePicker.sourceType = .camera
-        descriptionLabel.sizeToFit()
-        descriptionLabel.adjustsFontSizeToFitWidth = true
-        setupNavBar(bgColor: #colorLiteral(red: 0.1592048705, green: 0.7238836884, blue: 0.4517703056, alpha: 1))
     }
     
     func setupNavBar(bgColor: UIColor) {
