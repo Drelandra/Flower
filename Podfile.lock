@@ -1,0 +1,22 @@
+PODS:
+  - ColorThiefSwift (0.4.0)
+  - SDWebImage (5.8.4):
+    - SDWebImage/Core (= 5.8.4)
+  - SDWebImage/Core (5.8.4)
+
+DEPENDENCIES:
+  - ColorThiefSwift
+  - SDWebImage
+
+SPEC REPOS:
+  trunk:
+    - ColorThiefSwift
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  ColorThiefSwift: 643bcd1364b4736ebcd190259646918ca17e8802
+  SDWebImage: cf6922231e95550934da2ada0f20f2becf2ceba9
+
+PODFILE CHECKSUM: 90cdce0d60c70cbf404616b95699364a530dd327
+
+COCOAPODS: 1.9.3
